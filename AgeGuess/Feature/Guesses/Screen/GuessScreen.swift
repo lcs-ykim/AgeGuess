@@ -9,6 +9,8 @@ import SwiftUI
 
 struct GuessScreen: View {
     
+    @ObservedObject var vm: GuessViewModel
+
     @State private var name: String = ""
 
     var body: some View {
@@ -16,7 +18,9 @@ struct GuessScreen: View {
         VStack {
             TextField("Enter Your Name", text: $name)
             
-//            Button("Find Age")
+            Button("Find Age") {
+                vm.getGuess()
+            }
         }
     }
     
