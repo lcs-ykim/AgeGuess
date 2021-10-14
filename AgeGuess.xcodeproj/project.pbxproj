@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0D66DD27185FAC0098997B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66DC27185FAC0098997B /* Info.swift */; };
 		7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */; };
 		7FCA06EC27172AE800C75EB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06EB27172AE800C75EB7 /* ContentView.swift */; };
 		7FCA06EE27172AF000C75EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA06ED27172AF000C75EB7 /* Assets.xcassets */; };
@@ -16,10 +17,10 @@
 		7FCA070527172DDA00C75EB7 /* GuessService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA070427172DDA00C75EB7 /* GuessService.swift */; };
 		7FCA070727172DF900C75EB7 /* GuessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA070627172DF900C75EB7 /* GuessView.swift */; };
 		7FCA070927172E0C00C75EB7 /* GuessScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA070827172E0C00C75EB7 /* GuessScreen.swift */; };
-		7FCA070B27172E6000C75EB7 /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA070A27172E6000C75EB7 /* Info.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0D66DC27185FAC0098997B /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		7FCA06E627172AE800C75EB7 /* AgeGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGuessApp.swift; sourceTree = "<group>"; };
 		7FCA06EB27172AE800C75EB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -30,7 +31,6 @@
 		7FCA070427172DDA00C75EB7 /* GuessService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GuessService.swift; path = AgeGuess/Feature/Guesses/ViewModel/GuessService.swift; sourceTree = SOURCE_ROOT; };
 		7FCA070627172DF900C75EB7 /* GuessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessView.swift; sourceTree = "<group>"; };
 		7FCA070827172E0C00C75EB7 /* GuessScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuessScreen.swift; sourceTree = "<group>"; };
-		7FCA070A27172E6000C75EB7 /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,7 +152,7 @@
 		7FCA070127172D6700C75EB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7FCA070A27172E6000C75EB7 /* Info.swift */,
+				7F0D66DC27185FAC0098997B /* Info.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7FCA06EC27172AE800C75EB7 /* ContentView.swift in Sources */,
-				7FCA070B27172E6000C75EB7 /* Info.swift in Sources */,
+				7F0D66DD27185FAC0098997B /* Info.swift in Sources */,
 				7FCA070927172E0C00C75EB7 /* GuessScreen.swift in Sources */,
 				7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */,
 				7FCA070727172DF900C75EB7 /* GuessView.swift in Sources */,
