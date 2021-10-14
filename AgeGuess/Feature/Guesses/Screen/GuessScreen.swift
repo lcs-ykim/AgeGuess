@@ -8,9 +8,18 @@
 import SwiftUI
 
 struct GuessScreen: View {
+    
+    @State private var name: String = ""
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            TextField("Enter Your Name", text: $name)
+            
+//            Button("Find Age")
+        }
     }
+    
 }
 
 struct GuessScreen_Previews: PreviewProvider {
