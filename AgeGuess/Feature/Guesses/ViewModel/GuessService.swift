@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GuessService {
-    func fetchGuess() async throws -> Info
+    func fetchGuess(name: String) async throws -> Info
 }
 
 final class GuessServiceImpl: GuessService {

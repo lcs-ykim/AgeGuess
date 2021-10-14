@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     
     @StateObject private var vm = GuessViewModelImpl(
-    service: GuessServiceImpl()
+        service: GuessServiceImpl(), name: 
     )
     
     var body: some View {

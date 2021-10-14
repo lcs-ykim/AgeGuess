@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HistoryScreen: View {
 
-    @ObservedObject var vm: GuessViewModel
+    @ObservedObject var vm: GuessViewModelImpl
 
     var body: some View {
         
@@ -36,6 +36,6 @@ struct HistoryScreen: View {
 
 struct HistoryScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryScreen()
+        HistoryScreen(vm: Info.dummyData)
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 protocol GuessViewModel: ObservableObject {
-    func getGuess() async
+    func getGuess(name: String) async
 }
 
 @MainActor
@@ -18,13 +18,20 @@ final class GuessViewModelImpl: GuessViewModel {
     
     private let service: GuessService
     
-    init(service: GuessService) {
+    let name: String
+    
+    init(service: GuessService, name: String) {
         self.service = service
+        self.name = name
     }
     
-    func getGuess() async {
+    func getGuess(name: String) async {
         do {
-            self.guesses = try await service.fetchGuess()
+            
+            let newGuess = try await service.fetchGuess(name: name)
+            
+            guesses.append(newGuess)
+            
         } catch {
             print(error)
         }

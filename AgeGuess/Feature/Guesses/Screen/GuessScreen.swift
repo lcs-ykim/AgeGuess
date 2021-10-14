@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GuessScreen: View {
     
-    @ObservedObject var vm: GuessViewModel
+    @ObservedObject var vm: GuessViewModelImpl
 
     @State private var name: String = ""
 
@@ -19,7 +19,7 @@ struct GuessScreen: View {
             TextField("Enter Your Name", text: $name)
             
             Button("Find Age") {
-                vm.getGuess()
+                vm.getGuess(name: name)
             }
         }
     }
@@ -28,6 +28,6 @@ struct GuessScreen: View {
 
 struct GuessScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GuessScreen()
+        GuessScreen(vm: GuessViewModelImpl(service: GuessServiceImpl(), name: <#T##String#>))
     }
 }
