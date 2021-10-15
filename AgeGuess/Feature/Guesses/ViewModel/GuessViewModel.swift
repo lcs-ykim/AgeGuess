@@ -18,22 +18,20 @@ final class GuessViewModelImpl: GuessViewModel {
     
     private let service: GuessService
     
-    let name: String
-    
-    init(service: GuessService, name: String) {
+    init(service: GuessService) {
         self.service = service
-        self.name = name
     }
     
     func getGuess(name: String) async {
         do {
             
             let newGuess = try await service.fetchGuess(name: name)
-            
+                        
             guesses.append(newGuess)
-            
+                        
         } catch {
             print(error)
         }
+        
     }
 }

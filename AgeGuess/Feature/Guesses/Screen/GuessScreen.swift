@@ -13,14 +13,36 @@ struct GuessScreen: View {
 
     @State private var name: String = ""
 
+    @State var guess: Info = Info(name: "Paris", age: 34)
+    
     var body: some View {
         
         VStack {
-            TextField("Enter Your Name", text: $name)
             
-            Button("Find Age") {
-                vm.getGuess(name: name)
+            GuessView(guess: guess)
+            
+            TextField("Enter Your Name", text: $name)
+                .padding()
+                
+            if vm.guesses.isEmpty {
+
+                Text("Loading Data")
+                
+            } else {
+                
+                Button("Find My Age") {
+                    
+                    guess = vm.guesses.last!
+                    
+                }
+
             }
+            
+        }
+        .task {
+
+            await vm.getGuess(name: name)
+
         }
     }
     
@@ -28,6 +50,6 @@ struct GuessScreen: View {
 
 struct GuessScreen_Previews: PreviewProvider {
     static var previews: some View {
-        GuessScreen(vm: GuessViewModelImpl(service: GuessServiceImpl(), name: <#T##String#>))
+        GuessScreen(vm: GuessViewModelImpl(service: GuessServiceImpl()))
     }
 }

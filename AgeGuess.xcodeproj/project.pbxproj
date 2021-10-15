@@ -11,7 +11,6 @@
 		7F0D66DF271864770098997B /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66DE271864770098997B /* HistoryScreen.swift */; };
 		7F0D66E2271865F50098997B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66E1271865F50098997B /* APIConstants.swift */; };
 		7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */; };
-		7FCA06EC27172AE800C75EB7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06EB27172AE800C75EB7 /* ContentView.swift */; };
 		7FCA06EE27172AF000C75EB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA06ED27172AF000C75EB7 /* Assets.xcassets */; };
 		7FCA06F127172AF000C75EB7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FCA06F027172AF000C75EB7 /* Preview Assets.xcassets */; };
 		7FCA06FB27172CD100C75EB7 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06FA27172CD100C75EB7 /* LoadingView.swift */; };
@@ -27,7 +26,6 @@
 		7F0D66E1271865F50098997B /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7FCA06E627172AE800C75EB7 /* AgeGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgeGuessApp.swift; sourceTree = "<group>"; };
-		7FCA06EB27172AE800C75EB7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7FCA06ED27172AF000C75EB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7FCA06F027172AF000C75EB7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7FCA06FA27172CD100C75EB7 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
@@ -78,7 +76,6 @@
 				7FCA06F727172B5500C75EB7 /* Base */,
 				7FCA06F827172B6800C75EB7 /* Feature */,
 				7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */,
-				7FCA06EB27172AE800C75EB7 /* ContentView.swift */,
 				7FCA06ED27172AF000C75EB7 /* Assets.xcassets */,
 				7FCA06EF27172AF000C75EB7 /* Preview Content */,
 			);
@@ -241,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FCA06EC27172AE800C75EB7 /* ContentView.swift in Sources */,
 				7F0D66DD27185FAC0098997B /* Info.swift in Sources */,
 				7FCA070927172E0C00C75EB7 /* GuessScreen.swift in Sources */,
 				7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */,

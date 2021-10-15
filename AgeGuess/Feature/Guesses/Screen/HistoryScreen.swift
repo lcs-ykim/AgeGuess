@@ -21,21 +21,18 @@ struct HistoryScreen: View {
 
                 List {
                     ForEach(vm.guesses, id: \.name) { guess in
-                        GuessView(guess: guess)
+                        GuessView(guess: vm.guesses.last!)
                     }
                 }
 
             }
         }
-//        .task {
-//            await vm.getHistory()
-//        }
 
     }
 }
 
 struct HistoryScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryScreen(vm: Info.dummyData)
+        HistoryScreen(vm: GuessViewModelImpl(service: GuessServiceImpl()))
     }
 }
