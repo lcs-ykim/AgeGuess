@@ -9,7 +9,7 @@ import Foundation
 
 struct Info: Decodable {
     let name: String
-    let age: Double
+    let age: Int
 }
 
 extension Info {

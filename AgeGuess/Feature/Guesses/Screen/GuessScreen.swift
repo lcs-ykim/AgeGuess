@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GuessScreen: View {
     
-    @ObservedObject var vm: GuessViewModelImpl
+    @StateObject var vm = GuessViewModelImpl(service: GuessServiceImpl())
 
     @State private var name: String = ""
 
@@ -24,26 +24,30 @@ struct GuessScreen: View {
             TextField("Enter Your Name", text: $name)
                 .padding()
                 
-            if vm.guesses.isEmpty {
-
-                Text("Loading Data")
+            Button("Find My Age") {
                 
-            } else {
-                
-                Button("Find My Age") {
+                Task {
                     
+                   await  vm.getGuess(name: name)
                     guess = vm.guesses.last!
-                    
+                    print(guess)
+                
                 }
-
+                
+               
+                
             }
             
         }
-        .task {
-
-            await vm.getGuess(name: name)
-
-        }
+//        .task {
+//
+//            if !(name.isEmpty) {
+//
+//                await vm.getGuess(name: name)
+//
+//            }
+//
+//        }
     }
     
 }

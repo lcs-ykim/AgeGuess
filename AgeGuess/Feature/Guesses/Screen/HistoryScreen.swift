@@ -21,7 +21,7 @@ struct HistoryScreen: View {
 
                 List {
                     ForEach(vm.guesses, id: \.name) { guess in
-                        GuessView(guess: vm.guesses.last!)
+                        GuessView(guess: guess)
                     }
                 }
 
