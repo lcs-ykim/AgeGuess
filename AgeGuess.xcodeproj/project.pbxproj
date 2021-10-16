@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F0D66DD27185FAC0098997B /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66DC27185FAC0098997B /* Info.swift */; };
+		7F0D18B7271B818C00CF40EF /* Guess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D18B6271B818C00CF40EF /* Guess.swift */; };
 		7F0D66DF271864770098997B /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66DE271864770098997B /* HistoryScreen.swift */; };
 		7F0D66E2271865F50098997B /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0D66E1271865F50098997B /* APIConstants.swift */; };
 		7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FCA06E927172AE800C75EB7 /* AgeGuessApp.swift */; };
@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		7F0D66DC27185FAC0098997B /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
+		7F0D18B6271B818C00CF40EF /* Guess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Guess.swift; sourceTree = "<group>"; };
 		7F0D66DE271864770098997B /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		7F0D66E1271865F50098997B /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
 		7FCA06E627172AE800C75EB7 /* AgeGuess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgeGuess.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,7 +163,7 @@
 		7FCA070127172D6700C75EB7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				7F0D66DC27185FAC0098997B /* Info.swift */,
+				7F0D18B6271B818C00CF40EF /* Guess.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F0D66DD27185FAC0098997B /* Info.swift in Sources */,
 				7FCA070927172E0C00C75EB7 /* GuessScreen.swift in Sources */,
 				7FCA06EA27172AE800C75EB7 /* AgeGuessApp.swift in Sources */,
 				7F0D66DF271864770098997B /* HistoryScreen.swift in Sources */,
@@ -247,6 +246,7 @@
 				7FCA070327172DCC00C75EB7 /* GuessViewModel.swift in Sources */,
 				7FCA070527172DDA00C75EB7 /* GuessService.swift in Sources */,
 				7FCA06FB27172CD100C75EB7 /* LoadingView.swift in Sources */,
+				7F0D18B7271B818C00CF40EF /* Guess.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

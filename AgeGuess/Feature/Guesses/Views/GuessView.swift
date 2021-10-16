@@ -9,7 +9,7 @@ import SwiftUI
 
 struct GuessView: View {
         
-    let guess: Info
+    let guess: Guess
 
     var body: some View {
         
@@ -48,6 +48,6 @@ struct GuessView: View {
 
 struct GuessView_Previews: PreviewProvider {
     static var previews: some View {
-        GuessView(guess: Info.dummyData.first!)
+        GuessView(guess: Guess.dummyData.first!)
     }
 }

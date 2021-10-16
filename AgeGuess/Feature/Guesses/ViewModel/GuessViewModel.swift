@@ -14,7 +14,7 @@ protocol GuessViewModel: ObservableObject {
 @MainActor
 final class GuessViewModelImpl: GuessViewModel {
     
-    @Published private(set) var guesses: [Info] = []
+    @Published private(set) var guesses: [Guess] = []
     
     private let service: GuessService
     

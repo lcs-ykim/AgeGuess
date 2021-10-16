@@ -8,15 +8,15 @@
 import Foundation
 
 protocol GuessService {
-    func fetchGuess(name: String) async throws -> Info
+    func fetchGuess(name: String) async throws -> Guess
 }
 
 final class GuessServiceImpl: GuessService {
     
-    func fetchGuess(name: String) async throws -> Info {
+    func fetchGuess(name: String) async throws -> Guess {
         let urlSession = URLSession.shared
         let url = URL(string: APIConstants.baseUrl.appending("?name=\(name)"))
         let (data, _) = try await urlSession.data(from: url!)
-        return try JSONDecoder().decode(Info.self, from: data)
+        return try JSONDecoder().decode(Guess.self, from: data)
     }
 }

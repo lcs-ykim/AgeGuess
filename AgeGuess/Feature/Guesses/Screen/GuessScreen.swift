@@ -9,11 +9,11 @@ import SwiftUI
 
 struct GuessScreen: View {
     
-    @StateObject var vm = GuessViewModelImpl(service: GuessServiceImpl())
+    @ObservedObject var vm = GuessViewModelImpl(service: GuessServiceImpl())
 
     @State private var name: String = ""
 
-    @State var guess: Info = Info(name: "Paris", age: 34)
+    @State var guess: Guess = Guess(name: "Paris", age: 34)
     
     var body: some View {
         
@@ -39,15 +39,7 @@ struct GuessScreen: View {
             }
             
         }
-//        .task {
-//
-//            if !(name.isEmpty) {
-//
-//                await vm.getGuess(name: name)
-//
-//            }
-//
-//        }
+
     }
     
 }
