@@ -15,10 +15,8 @@ struct GuessView: View {
         
         VStack(alignment: .leading, spacing: 8) {
 
-            Text("Your Profile")
+            Text("Profile")
                 .font(.title)
-            Text("Apologies for the lag")
-                .font(.title2)
             Text("Name: \(guess.name)")
             Text("Age: \(guess.age)")
                 .lineLimit(2)

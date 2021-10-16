@@ -26,7 +26,7 @@ struct AgeGuessApp: App {
                 }
                 .tabItem {
                     // Image(systemName: "sun.haze.fill")
-                    Text("Find Age")
+                    Text("Find My Age")
                 }
 
                 NavigationView {

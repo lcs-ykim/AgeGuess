@@ -22,10 +22,8 @@ struct HistoryScreen: View {
 
             Group {
 
-                if vm.guesses.isEmpty {
-                    LoadingView(text: "Loading History")
-                } else {
-
+                if !(vm.guesses.isEmpty) {
+                    
                     List {
                         ForEach(vm.guesses, id: \.name) { guess in
                             GuessView(guess: guess)
@@ -33,6 +31,7 @@ struct HistoryScreen: View {
                     }
 
                 }
+                
             }
 
         }
