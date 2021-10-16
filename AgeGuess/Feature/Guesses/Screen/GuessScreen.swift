@@ -19,7 +19,7 @@ struct GuessScreen: View {
         
         ZStack {
             
-            LinearGradient(colors: [.blue, .white],
+            LinearGradient(colors: [.yellow, .white],
                            startPoint: .top,
                            endPoint: .bottom)
                 .edgesIgnoringSafeArea(.all)
