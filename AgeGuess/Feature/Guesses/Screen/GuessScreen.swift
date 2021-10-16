@@ -17,27 +17,36 @@ struct GuessScreen: View {
     
     var body: some View {
         
-        VStack {
+        ZStack {
             
-            GuessView(guess: guess)
+            LinearGradient(colors: [.blue, .white],
+                           startPoint: .top,
+                           endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
             
-            TextField("Enter Your Name", text: $name)
-                .padding()
+            VStack {
                 
-            Button("Find My Age") {
+                GuessView(guess: guess)
                 
-                Task {
+                TextField("Enter Your Name", text: $name)
+                    .padding()
                     
-                   await  vm.getGuess(name: name)
-                    guess = vm.guesses.last!
-                    print(guess)
-                
+                Button("Find My Age") {
+                    
+                    Task {
+                        
+                       await  vm.getGuess(name: name)
+                        guess = vm.guesses.last!
+                        print(guess)
+                    
+                    }
+                    
+                   
+                    
                 }
                 
-               
-                
             }
-            
+
         }
 
     }

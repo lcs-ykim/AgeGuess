@@ -13,21 +13,30 @@ struct HistoryScreen: View {
 
     var body: some View {
         
-        Group {
+        ZStack {
+            
+            LinearGradient(colors: [.blue, .white],
+                           startPoint: .top,
+                           endPoint: .bottom)
+                .edgesIgnoringSafeArea(.all)
 
-            if vm.guesses.isEmpty {
-                LoadingView(text: "Loading History")
-            } else {
+            Group {
 
-                List {
-                    ForEach(vm.guesses, id: \.name) { guess in
-                        GuessView(guess: guess)
+                if vm.guesses.isEmpty {
+                    LoadingView(text: "Loading History")
+                } else {
+
+                    List {
+                        ForEach(vm.guesses, id: \.name) { guess in
+                            GuessView(guess: guess)
+                        }
                     }
+
                 }
-
             }
-        }
 
+        }
+        
     }
 }
 
